@@ -134,7 +134,7 @@ public class OAuth2TokenRevocationWithRevokedAccessToken extends OAuth2ServiceAb
     }
 
     @Test(dependsOnMethods = {"testRevokedAccessTokenRevocation"},
-            description = "Call revocation request with a revoked access token but invalid credentials")
+            description = "Call revocation request with a revoked access token but invalid auth credentials")
     public void testRevokedAccessTokenRevocationWithInvalidClientCredentials() throws Exception {
 
         // Request an access token
